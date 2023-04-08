@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['Sad-girl', 'Brooklyn-baby', 'Blinding-lights', 'Die-for-you'];
+const songs = ['sad-girl', 'brooklyn-baby', 'blinding-lights', 'die-for-you'];
 
 // Keep track of song
 let songIndex = 3;
@@ -23,7 +23,7 @@ loadSong(songs[songIndex]);
 // Update song details
 function loadSong(song) {
     title.innerText = song;
-    audio.src = `Music/${song}.mp3`;
+    audio.src = `music/${song}.mp3`;
     cover.src = `images/${song}.jpg`;
 }
 
